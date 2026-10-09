@@ -1,0 +1,478 @@
+@import './variables.css';
+
+
+body{
+    background: var(--color-text-secondary);
+    margin:0.5rem;
+}
+
+.logo{
+    width: 100px;
+     height: auto;
+}
+.header,.footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--color-primary);
+    padding: 0.5rem;
+    gap: 1rem;
+    border-radius: var(--border-radius);
+}
+.header h1{
+    font-size: 3rem;
+    background-color: var(--color-primary);
+    color: var(--color-text-secondary);
+}
+
+.nav-menu-ppal{
+    background-color: var(--color-secondary);
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: var(--border-radius);
+
+    .lista-menu-ppal{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+
+        li a{
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: var(--color-text-primary);
+            font-size:  1.2rem;
+        }
+    }
+}
+
+.main{
+    min-height: 100vh;
+    padding:1rem;
+}
+
+.banner{
+    height: 600px;
+    color: var(--color-text-secondary);
+    background-image: url('../img/banner.png');
+    border-radius: var(--border-radius);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .banner-content{
+     max-width: 90%;
+       position:relative;
+       top:2rem;
+       left:3rem;
+    }
+    .banner-titulo{
+        max-width: 90%;
+
+        display:flex;
+        align-items:center;
+        gap:0.5rem;
+
+        h1{
+        
+        font-size: 4rem;
+        font-family: var(--font-primary);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.911);
+    }
+    }
+    
+    p{
+        max-width: 90%;
+
+        flex-shrink: 1;
+        font-size: 2rem;
+        font-family: var(--font-secondary);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.97);
+    }
+}
+.productos-dest-section{
+    padding-top: 3rem;
+}
+.productos-dest-div{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+} 
+
+.prod-dest{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+    max-width: 500px;
+    background-color: var(--color-tertiary);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: var(--border-radius);
+    img{
+        width: 100%;
+        max-height: 250px;
+        height: auto;
+        border-radius: var(--border-radius);
+    }
+    h4,p,h5,i{
+        color: #000000;
+    }
+    h4{
+        font-family: var(--font-secondary);
+        font-size:2rem;
+    }
+    p{
+        font-size:1.2rem;
+    }
+    .precio{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        h5{
+            font-family: var(--font-secondary);
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+            font-size:2.5rem;
+        }
+        i{
+            background-color: var(--color-primary);
+            font-size: 2rem;
+            padding: 1rem;
+            border-radius:var(--border-radius);
+        }
+    }
+    
+}
+
+.resenia-section{
+    padding-top:2rem;
+
+    .resenia-div{
+        display:flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+
+        .resenia-article{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            max-width: 500px;
+            background-color: var(--color-quaternary);
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: var(--border-radius);
+
+            .cliente{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 0.5rem;
+            }
+            img{
+                width: 3rem;
+                height: 3rem;
+                border-radius:50%
+            }
+
+            p,h5,i{
+                color: #000000;
+                font-size:1.2rem;
+
+            }
+            h5{
+                font-family: var(--font-secondary);
+            }
+            
+        }
+    }
+
+}
+
+
+.footer{
+    color: var(--color-text-secondary);
+    position:sticky;
+    bottom:0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .footer-content{
+            color: var(--color-text-secondary);
+
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+    }
+    .contacto{
+            color: var(--color-text-secondary);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2rem;
+        box-sizing: border-box; 
+
+        h4 a{
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: var(--color-text-secondary);
+
+            i{
+                color: var(--color-text-secondary);
+            }
+        }
+        h5{
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+        }
+        .social-icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 0.5rem;
+            i{
+                color: var(--color-text-secondary);
+            }
+        }
+    }
+    .footer-home{
+            color: var(--color-text-secondary);
+
+         .lista-menu-ppal{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+         gap: 0.2rem;
+             color: var(--color-text-secondary);
+
+
+
+        li a{
+            text-decoration: none;
+            color: var(--color-text-secondary);
+            font-size:  1rem;
+
+            i{
+                color: var(--color-text-secondary);
+            }
+        }
+    }
+    }
+}
+
+
+@media(max-width:1150px){
+    .banner{
+        max-height: 450px;
+
+        .banner-titulo{
+        .logo{
+            max-width: 70px;
+        }
+        h1{
+            font-size: 50px;
+        }
+        
+    }
+        p{
+        font-size:26px;
+        }
+    }
+    
+
+    .productos-dest-div{
+        .prod-dest{
+            max-width: 250px;
+
+            h4{
+                 font-size: 28px;
+
+            }
+        }
+    }
+    .resenia-section{
+        .resenia-div{
+            .resenia-article{
+                max-width: 250px;
+            }
+        }
+
+    }
+    
+}
+
+@media(max-width:850px){
+    .banner{
+        p{
+        font-size:20px;
+        }
+    }
+    .productos-dest-div{
+        .prod-dest{
+            max-width: 250px;
+
+            h4{
+             font-size: 25px;
+
+            }
+        }
+    }
+    .resenia-section{
+        .resenia-div{
+            .resenia-article{
+                p{
+                    font-size: 1rem;
+                }            
+            }
+        }
+
+    }
+
+}
+
+@media(max-width:750px){
+    .nav-menu-ppal{
+        .lista-menu-ppal{
+            li a{
+                font-size:1rem;
+                p{
+                    display: none;
+                }
+            }
+        }
+        
+    }
+
+    .banner{
+    
+        .banner-content{
+            left: 10px;
+            p{
+                
+                max-width: 370px;
+            }
+            .banner-titulo{
+                h1{
+                    font-size:2rem;
+                }
+            }
+        }
+
+    }
+
+     .productos-dest-div{
+        .prod-dest{
+            max-width: 200px;
+            
+            img{
+               max-height: 200px;
+
+            }
+
+            h4{
+             font-size: 20px;
+
+            }
+            p{
+                font-size:1rem;
+            }
+        }
+    }
+    
+
+}
+
+@media (max-width:590px){
+
+    .banner{
+        display: flex;
+
+        background-image: url('../img/banner-celu.jpg');
+        background-size: cover;
+    
+        .banner-content{
+            top:150px;
+            max-height:350px;
+            
+            .banner-titulo{
+                h1{
+                    font-size:2rem;
+                }
+            }
+
+        }
+
+    }
+
+       .productos-dest-div{
+        .prod-dest{
+            max-width: 350px;
+            
+            img{
+               max-height: 200px;
+
+            }
+
+            h4{
+             font-size: 20px;
+
+            }
+            p{
+                font-size:1rem;
+            }
+        }
+    }
+
+    .resenia-section{
+        .resenia-div{
+            .resenia-article{
+                max-width: 350px;
+            }
+        }
+
+    }
+}
+
+@media (max-width:400px){
+    .header{
+        .logo{
+            max-width: 70px;
+        }
+       .titulo-header{
+        h1{
+            font-size:40px;
+        }
+       }
+    }
+
+    .footer{
+        .footer-content{
+            .contacto{
+                h4 a{
+                    font-size:0.8rem;
+                }
+            }
+        }
+        .footer-home{
+            .lista-menu-ppal{
+                li a{
+                    font-size:0.8rem;
+                }
+            }
+        }
+    }
+}
+

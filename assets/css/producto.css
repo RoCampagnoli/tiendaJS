@@ -1,0 +1,116 @@
+@import './variables.css';
+
+.main{
+    padding: 1rem;
+    display: grid;
+    grid-template-areas:
+    "productos productos productos productos"
+    "menu-lateral prod1 prod1 prod1"
+    "menu-lateral prod2 prod2 prod2"
+    "menu-lateral prod3 prod3 prod3"
+    "menu-lateral prod4 prod4 prod4";
+    border-radius: var(--border-radius);
+}
+.productos-section{
+    grid-area: productos;
+}
+.menu-lateral{
+    grid-area: menu-lateral;
+    background-color: var(--color-secondary);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: var(--border-radius);
+
+    position:sticky;
+    top:1rem;
+    align-self: start;
+
+    .lista-menu-lateral{
+        list-style: none;
+        li{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid var(--color-text-primary);
+            border-radius: var(--border-radius);
+            color: var(--color-text-primary);
+            font-size: 1.2rem;
+            padding: 1rem;
+            margin: 1rem;
+        }
+        li a{
+            text-decoration: none;
+            color: var(--color-text-primary);
+        }
+    }
+}
+.prod1{
+    grid-area: prod1;
+}
+
+.prod2{
+    grid-area: prod2;
+
+}
+.prod3{
+    grid-area: prod3;
+}
+.prod4{
+    grid-area: prod4;
+}
+
+
+.titulo-seccion{
+    background-color: var(--color-quaternary);
+  padding: 1rem;
+    margin: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.titulo-producto{
+    font-family: var(--font-secondary);
+    font-size: 2rem;
+}
+
+.productos-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .prod-dest{
+        max-width: 300px;
+        .titulo-producto{
+            font-size: 28px;
+        }
+    }
+}
+
+@media (max-width:680px){
+    .menu-lateral{
+        padding: 0.5rem;
+        .nav-menu-lateral{
+            .lista-menu-lateral{
+                li {
+                    padding: 1rem;
+                    margin: 0.5rem;
+                    a{
+                    font-size: 1rem ;
+                    }
+                }
+            }
+        }
+    }
+
+    .productos-div{
+        .prod-dest{
+            p{
+             font-size: 1rem;   
+            }
+            .titulo-producto{
+                font-size: 25px;
+            }
+        }
+    }
+
+}

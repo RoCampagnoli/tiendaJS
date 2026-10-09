@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+            <link rel="icon" href="../assets/img/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/contacto.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Englebert&family=Geom:ital,wght@0,300..900;1,300..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <header class="header">
+        <img src="../assets/img/logo.png" class="logo" alt="Logo">
+       <div class="titulo-header">
+            <h1>Tienda JS</h1>
+            <p>Tu tienda de electrónica</p>
+       </div>
+        
+    </header>
+
+         <nav class="nav-menu-ppal">
+        <ul class="lista-menu-ppal">
+            <li><a href="/tp final/index.html"><i class="fas fa-home"></i>
+                 <p>Inicio</p>
+                </a>
+            </li>
+            <li><a href="/tp final/index.html#destacados"><i class="fas fa-star"></i> 
+                <p>Destacados</p>
+            </a>
+            </li>
+            <li><a href="/tp final/pages/productos.html"><i class="fas fa-store"></i> <p>Productos</p></a></li>
+            <li><a href="/tp final/index.html#resenia"><i class="fas fa-comment"></i> <p>Reseñas</p></a></li>
+            <li><a href="/tp final/pages/contacto.html"><i class="fas fa-envelope"></i> <p>Contacto</p></a></li>
+    
+        </ul>
+    </nav>
+
+
+    <main class="main">
+        <section class="productos-section" id="product">
+            <h2 ><i class="fas fa-envelope"></i> Contactactate con nosotros</h2>
+           
+        </section >
+
+        <div class="div-contacto">
+            <section class="form-section">
+            <form action="https://formspree.io/f/mnpqpjkk" method="POST" class="form">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre.." required>
+                    
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su email.." required>
+                </div>
+                <div>
+                    <label for="celular">Celular:</label>
+                    <input type="number" id="celular" name="celular" placeholder="Ingrese su celular.." required>
+                    
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" placeholder="Ingrese su mensaje.." required></textarea>
+                </div>
+                
+                <button class="btn-form" type="submit">Enviar</button>
+            </form>
+        </section>
+       <section class="redes">
+        <h5>Teléfonos</h5>
+        <div class="social-icons">
+            <i class="fas fa-phone"><span> 0800-222-3333</span></i>
+            <i class="fas fa-mobile-alt"><span> 11-2233-2233</span></i>
+            <i class="fab fa-whatsapp"> <span>11-2233-3322</span></i>
+
+        </div>
+
+        <h5>Nuestras redes</h5>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"> <span>Facebook</span></i>
+                    <i class="fab fa-instagram"> <span>Instagram</span></i>
+                    <i class="fab fa-linkedin"> <span>LinkedIn</span></i>
+                    <i class="fab fa-telegram"> <span>Telegram</span></i>
+                </div>
+
+       </section> 
+
+        </div>
+        
+            
+
+            </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <section id="contacto" class="contacto">
+                <h4><a href="/tp final/pages/contacto.html"><i class="fas fa-envelope"></i> Contactate con nosotros</a></h4>
+                <h5>Nuestras redes</h5>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-telegram"></i>
+                </div>
+            </section>
+       </div>     
+        <div class="footer-home">
+                <ul class="lista-menu-ppal">
+                    <li><a href="/tp final/index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="/tp final/pages/productos.html"><i class="fas fa-store"></i> Productos</a></li>
+                    <li><a href="#resenia"><i class="fas fa-comment"></i> Reseñas</a></li>
+                </ul>
+        </div>
+        
+</footer>
+</body>
+</html>

@@ -1,0 +1,25 @@
+*{
+    color: var(--color-text-primary);
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /*banners*/
+    --color-primary: #677dec;
+    --color-secondary: #1d36af;
+    --color-tertiary: #FCE47F;
+    --color-quaternary: #ec67df;
+
+/*textos*/
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #000000;
+
+    --font-primary: 'Courier New', Courier, monospace;
+    --font-secondary: 'Englebert';
+
+/*bordes*/
+    --border-radius: 1.2rem;
+
+}
